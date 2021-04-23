@@ -1,10 +1,17 @@
 import React from "react";
-import Router from "./router/router";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import routes from "./router/info"
 
-const App = () =>{
-
-  return <Router/>
-
-}
-
-export default App;
+export default function App(){
+  return (
+      <BrowserRouter>
+        <Switch>
+          {
+            routes.map((route, index) => (
+              <Route key = {index} path = {route.path}  render{() => route.layout} />
+            ))
+          }
+        </Switch>
+      </BrowserRouter>
+  );
+};
