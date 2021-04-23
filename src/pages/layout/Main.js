@@ -2,6 +2,7 @@ import React from "react";
 
 import styles from "../scss/main.module.scss";
 
+
 const MainLayout = (e) =>{
     console.log(e);
     return(
