@@ -1,0 +1,26 @@
+@import "default.module";
+
+.all_wrapper {
+  @extend .row;
+  min-width: 960px;
+  height: 100vh;
+
+  .content_wrapper {
+    width: 100%;
+    padding: 3.0rem 4.5rem;
+    background-color: $background;
+    .content_header {
+      margin-bottom: 1.5rem;
+
+      .content_header_container {
+        height: 2rem;
+        line-height: 2rem;
+
+        .content_header_title {
+          font-size: 1.25rem;
+          color: $black;
+        }
+      }
+    }
+  }
+}

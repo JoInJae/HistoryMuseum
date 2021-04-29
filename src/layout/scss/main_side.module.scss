@@ -1,0 +1,63 @@
+@import "default.module";
+
+.side_wrapper{
+  @extend .column;
+  width : 17.0rem; //272px
+  min-width : 17.0rem;
+  height: 100%;
+  background-color: $white;
+}
+
+.side_header{
+  @extend .row;
+  background-color: $highlight;
+  color : $white;
+  padding: 2.5rem;
+
+  .header_container{
+    @extend .row;
+    width:100%;
+    height: 1.25rem;
+    line-height: 1.25rem;
+
+    .header_container_title{
+      width:100%;
+      height : inherit;
+    }
+    .header_container_menu_btn{
+      height : inherit;
+      cursor: pointer;
+    }
+  }
+}
+
+.side_body{
+  padding: 2.25rem 0;
+
+  .list_container{
+    @extend .row;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    padding: 1.5rem;
+    color: $lightgray1;
+
+    .list_container_menu_img{
+      margin-right: 1.0rem;
+    }
+
+    .list_container_text{
+
+    }
+
+  }
+
+  .list_container.active{
+
+    background-color: $lightblue;
+    color: $highlight;
+    padding-left: 1.25rem;
+    border-left: 0.25rem $highlight solid;
+
+  }
+
+}

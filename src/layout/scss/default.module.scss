@@ -1,0 +1,30 @@
+$black: #0E0E0E;
+$white : #FFFFFF;
+$highlight: #5490FF;
+$background: #F8F8F8;
+$darkgray1: #707070;
+$lightgray1: #C4C4C4;
+$lightgray2: #F2F2F2;
+$lightblue: #F2F6FF;
+
+*{
+  margin: 0; padding: 0; border: 0; font-size: 16px; outline: none; text-decoration: none;
+}
+
+span{
+  display: inline-block; line-height: inherit;
+}
+
+.column{
+  display: flex; flex-direction: column;
+}
+
+.row{
+  display: flex; flex-direction: row;
+}
+
+.two_division{
+  width:100%;
+
+
+}

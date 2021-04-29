@@ -1,0 +1,56 @@
+@import "default.module";
+
+.content_wrapper{
+  @extend .column;
+
+  .category_wrapper{
+    @extend .row;
+
+    .category_container{
+      @extend .column;
+      width: (100% / 3);
+      margin-right: 2.0rem;
+      &:last-child{
+        margin-right: 0;
+      }
+
+      .category_header{
+        background-color: $lightgray2;
+        padding-left: 1.25rem;
+        margin-bottom: 1.0rem;
+        .category_header_container{
+          height: 2.5rem;
+          line-height: 2.5rem;
+          .category_header_title{
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+    }
+
+    .category_body{
+      height:13.875rem;
+
+      .category_body_container{
+        position: relative;
+        height: 1.25rem;
+        line-height: 1.25rem;
+        padding: 0.5rem 3.0rem;
+        margin-bottom: 0.5rem;
+        border: 0.0625rem $darkgray1 solid;
+        text-align: center;
+        cursor: pointer;
+        &:last-child{
+          margin-bottom: 0;
+        }
+        .category_body_text{
+          font-size: 0.8rem;
+        }
+
+      }
+
+    }
+  }
+
+}
